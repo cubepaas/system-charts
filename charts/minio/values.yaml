@@ -136,12 +136,29 @@ ingress:
 nodeSelector: {}
 tolerations: []
 affinity: {
-  { podAntiAffinity:
-      { preferredDuringSchedulingIgnoredDuringExecution:
-          [ { weight: 100,
-              podAffinityTerm:
-                { labelSelector: { matchExpressions: [ { key: 'app', operator: 'NotIn', values: [ 'minio' ] } ] },
-                  topologyKey: 'kubernetes.io/hostname' } } ] } }
+  {
+    "podAntiAffinity": {
+      "preferredDuringSchedulingIgnoredDuringExecution": [
+      {
+        "weight": 100,
+        "podAffinityTerm": {
+          "labelSelector": {
+            "matchExpressions": [
+            {
+              "key": "app",
+              "operator": "NotIn",
+              "values": [
+                "minio"
+              ]
+            }
+            ]
+          },
+          "topologyKey": "kubernetes.io/hostname"
+        }
+      }
+      ]
+    }
+  }
 }
 
 # Additational pod annotations
