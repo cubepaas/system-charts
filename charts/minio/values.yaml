@@ -5,7 +5,7 @@ clusterDomain: cluster.local
 ## Set default image, imageTag, and imagePullPolicy. mode is used to indicate the
 ##
 image:
-  repository: minio/minio
+  repository: registry.cn-hangzhou.aliyuncs.com/link-cloud/minio
   tag: edge
   pullPolicy: IfNotPresent
 
