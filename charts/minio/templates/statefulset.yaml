@@ -52,7 +52,7 @@ spec:
 {{ toYaml .Values.podLabels | indent 8 }}
 {{- end }}
       annotations:
-#        field.cubepaas.com/workloadMetrics: '[{"path":"/minio/prometheus/metrics","port":9000,"schema":"HTTP"}]'
+        field.cubepaas.com/workloadMetrics: '[{"path":"/minio/prometheus/metrics","port":9000,"schema":"HTTP"}]'
         checksum/secrets: {{ include (print $.Template.BasePath "/secrets.yaml") . | sha256sum }}
         checksum/config: {{ include (print $.Template.BasePath "/configmap.yaml") . | sha256sum }}
 {{- if .Values.podAnnotations }}
@@ -166,3 +166,31 @@ spec:
             storage: {{ .Values.persistence.size }}
 {{ end }}
 {{- end }}
+
+#---
+#apiVersion: monitoring.coreos.com/v1
+#kind: ServiceMonitor
+#metadata:
+#  name: minio
+#  namespace: minio
+#  labels:
+#    cubepaas.com/creator: linkcloud
+#spec:
+#  selector:
+#    matchLabels:
+#      app: minio
+#    namespaceSelector:
+#      matchNames:
+#        - minio
+#  endpoints:
+#    - metricRelabelings:
+#        - action: replace
+#          regex: (.+)
+#          replacement: minio
+#          sourceLabels:
+#            - job
+#          targetLabel: statefulset
+#      path: /minio/prometheus/metrics
+#      port: service
+#      scheme: HTTP
+#      targetPort: 9000
