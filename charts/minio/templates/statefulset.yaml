@@ -44,6 +44,8 @@ spec:
       release: {{ .Release.Name }}
   template:
     metadata:
+      annotations:
+        field.cubepaas.com/workloadMetrics: '[{"path":"/minio/prometheus/metrics","port":9000,"schema":"HTTP"}]'
       name: {{ template "minio.fullname" . }}
       labels:
         app: {{ template "minio.name" . }}
@@ -99,6 +101,8 @@ spec:
                 secretKeyRef:
                   name: {{ if .Values.existingSecret }}{{ .Values.existingSecret }}{{ else }}{{ template "minio.fullname" . }}{{ end }}
                   key: secretkey
+            - name: MINIO_PROMETHEUS_AUTH_TYPE
+              value: public
             {{- range $key, $val := .Values.environment }}
             - name: {{ $key }}
               value: {{ $val | quote }}
