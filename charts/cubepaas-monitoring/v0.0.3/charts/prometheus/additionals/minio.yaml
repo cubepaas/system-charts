@@ -1,0 +1,5 @@
+- job_name: minio-job
+  metrics_path: /minio/prometheus/metrics
+  scheme: http
+  static_configs:
+    - targets: ['minio.minio:9000']

@@ -52,7 +52,7 @@ spec:
 {{ toYaml .Values.podLabels | indent 8 }}
 {{- end }}
       annotations:
-        field.cubepaas.com/workloadMetrics: '[{"path":"/minio/prometheus/metrics","port":9000,"schema":"HTTP"}]'
+#        field.cubepaas.com/workloadMetrics: '[{"path":"/minio/prometheus/metrics","port":9000,"schema":"HTTP"}]'
         checksum/secrets: {{ include (print $.Template.BasePath "/secrets.yaml") . | sha256sum }}
         checksum/config: {{ include (print $.Template.BasePath "/configmap.yaml") . | sha256sum }}
 {{- if .Values.podAnnotations }}
