@@ -1,0 +1,7 @@
+apiVersion: v1
+description: Creates ServiceMonitor CRD of apiserver for Kubernetes which maintaining by Cubepaas.
+engine: gotpl
+maintainers:
+- name: thxCode
+name: exporter-kubernetes
+version: 0.0.1

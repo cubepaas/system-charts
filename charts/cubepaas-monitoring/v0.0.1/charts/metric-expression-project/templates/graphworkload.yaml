@@ -1,4 +1,4 @@
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 kind: ProjectMonitorGraph
 metadata:
   labels:
@@ -23,7 +23,7 @@ spec:
   yAxis:
     unit: mcpu
 ---
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 kind: ProjectMonitorGraph
 metadata:
   labels:
@@ -48,7 +48,7 @@ spec:
   yAxis:
     unit: byte
 ---
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 kind: ProjectMonitorGraph
 metadata:
   labels:
@@ -73,7 +73,7 @@ spec:
   yAxis:
     unit: kbps
 ---
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 kind: ProjectMonitorGraph
 metadata:
   labels:
@@ -98,7 +98,7 @@ spec:
   yAxis:
     unit: pps
 ---
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 kind: ProjectMonitorGraph
 metadata:
   labels:

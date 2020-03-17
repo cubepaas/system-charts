@@ -1,5 +1,5 @@
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: apiserver-request-latency-milliseconds-avg
   labels:
@@ -16,7 +16,7 @@ spec:
   description: apiserver request latency milliseconds avg
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: apiserver-request-latency-milliseconds-avg-details
   labels:
@@ -33,7 +33,7 @@ spec:
   description: apiserver request latency milliseconds avg
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: apiserver-request-count-sum-rate
   labels:
@@ -50,7 +50,7 @@ spec:
   description: apiserver request count sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: apiserver-request-count-sum-rate-details
   labels:
@@ -68,7 +68,7 @@ spec:
   description: apiserver request count sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: apiserver-request-error-count-sum-rate
   labels:
@@ -86,7 +86,7 @@ spec:
   description: apiserver request error count sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: apiserver-request-error-count-sum-rate-details
   labels:

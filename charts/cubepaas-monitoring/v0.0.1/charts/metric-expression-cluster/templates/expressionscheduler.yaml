@@ -1,5 +1,5 @@
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: scheduler-e-2-e-scheduling-latency-seconds-quantile
   labels:
@@ -16,7 +16,7 @@ spec:
   description: scheduler e 2 e scheduling latency seconds quantile
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: scheduler-e-2-e-scheduling-latency-seconds-quantile-details
   labels:
@@ -33,7 +33,7 @@ spec:
   description: scheduler e 2 e scheduling latency seconds quantile
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: scheduler-total-preemption-attempts
   labels:
@@ -49,7 +49,7 @@ spec:
   description: Scheduler scheduling algorithm latency seconds quantile
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: scheduler-total-preemption-attempts-details
   labels:
@@ -65,7 +65,7 @@ spec:
   description: Scheduler scheduling algorithm latency seconds quantile
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: scheduler-pod-unscheduler
   labels:
@@ -81,7 +81,7 @@ spec:
   description: pod unscheduler
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: scheduler-pod-unscheduler-details
   labels:

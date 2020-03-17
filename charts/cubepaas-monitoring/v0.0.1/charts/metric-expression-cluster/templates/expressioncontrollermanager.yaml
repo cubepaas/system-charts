@@ -1,5 +1,5 @@
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: controllermanager-volumes-depth
   labels:
@@ -15,7 +15,7 @@ spec:
   description: controllermanager volumes depth
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: controllermanager-volumes-depth-details
   labels:
@@ -31,7 +31,7 @@ spec:
   description: controllermanager volumes depth
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: controllermanager-deployment-depth
   labels:
@@ -47,7 +47,7 @@ spec:
   description: controllermanager deployment adds
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: controllermanager-deployment-depth-details
   labels:
@@ -63,7 +63,7 @@ spec:
   description: controllermanager deployment adds
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: controllermanager-replicaset-depth
   labels:
@@ -79,7 +79,7 @@ spec:
   description: controllermanager replicaset depth
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: controllermanager-replicaset-depth-details
   labels:
@@ -95,7 +95,7 @@ spec:
   description: controllermanager replicaset depth
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: controllermanager-service-depth
   labels:
@@ -111,7 +111,7 @@ spec:
   description: controllermanager service depth
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: controllermanager-service-depth-details
   labels:
@@ -127,7 +127,7 @@ spec:
   description: controllermanager service depth
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: controllermanager-serviceaccount-depth
   labels:
@@ -143,7 +143,7 @@ spec:
   description: controllermanager serviceaccount depth
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: controllermanager-serviceaccount-depth-details
   labels:
@@ -159,7 +159,7 @@ spec:
   description: controllermanager serviceaccount depth
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: controllermanager-endpoint-depth
   labels:
@@ -175,7 +175,7 @@ spec:
   description: controllermanager endpoint depth
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: controllermanager-endpoint-depth-details
   labels:
@@ -191,7 +191,7 @@ spec:
   description: controllermanager endpoint depth
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: controllermanager-daemonset-depth
   labels:
@@ -207,7 +207,7 @@ spec:
   description: controllermanager daemonset depth
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: controllermanager-daemonset-depth-details
   labels:
@@ -223,7 +223,7 @@ spec:
   description: controllermanager daemonset depth
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: controllermanager-deployment-depth
   labels:
@@ -239,7 +239,7 @@ spec:
   description: controllermanager deployment depth
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: controllermanager-deployment-depth-details
   labels:
@@ -255,7 +255,7 @@ spec:
   description: controllermanager deployment depth
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: controllermanager-statefulset-depth
   labels:
@@ -271,7 +271,7 @@ spec:
   description: controllermanager statefulset adds
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: controllermanager-statefulset-depth-details
   labels:

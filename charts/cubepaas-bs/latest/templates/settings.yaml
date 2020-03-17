@@ -1,0 +1,134 @@
+apiVersion: longhorn.rancher.io/v1alpha1
+kind: Setting
+metadata:
+  labels:
+    cubepaas.com/creator: linkcloud
+  name: backup-target
+  namespace: {{ .Release.Namespace }}
+value: {{ .Values.defaultSettings.backupTarget }}
+# ---
+# apiVersion: longhorn.rancher.io/v1alpha1
+# kind: Setting
+# metadata:
+#   labels:
+#     cubepaas.com/creator: linkcloud
+#   name: backup-target-credential-secret
+#   namespace: {{ .Release.Namespace }}
+# value: {{ .Values.defaultSettings.backupTargetCredentialSecret }}
+# ---
+# apiVersion: longhorn.rancher.io/v1alpha1
+# kind: Setting
+# metadata:
+#   labels:
+#     cubepaas.com/creator: linkcloud
+#   name: backupstore-poll-interval
+#   namespace: {{ .Release.Namespace }}
+# value: {{ .Values.defaultSettings.backupstorePollInterval }}
+# ---
+# apiVersion: longhorn.rancher.io/v1alpha1
+# kind: Setting
+# metadata:
+#   labels:
+#     cubepaas.com/creator: linkcloud
+#   name: create-default-disk-labeled-nodes
+#   namespace: {{ .Release.Namespace }}
+# value: {{ .Values.defaultSettings.createDefaultDiskLabeledNodes }}
+# ---
+# apiVersion: longhorn.rancher.io/v1alpha1
+# kind: Setting
+# metadata:
+#   labels:
+#     cubepaas.com/creator: linkcloud
+#   name: default-data-path
+#   namespace: {{ .Release.Namespace }}
+# value: {{ .Values.defaultSettings.defaultDataPath }}
+# ---
+# apiVersion: longhorn.rancher.io/v1alpha1
+# kind: Setting
+# metadata:
+#   labels:
+#     cubepaas.com/creator: linkcloud
+#   name: default-engine-image
+#   namespace: {{ .Release.Namespace }}
+# value: registry.cn-hangzhou.aliyuncs.com/link-cloud/cubepaas-bs-engine:v0.6.0
+# ---
+# apiVersion: longhorn.rancher.io/v1alpha1
+# kind: Setting
+# metadata:
+#   labels:
+#     cubepaas.com/creator: linkcloud
+#   name: default-longhorn-static-storage-class
+#   namespace: {{ .Release.Namespace }}
+# value: cubepaas-static
+# ---
+# apiVersion: longhorn.rancher.io/v1alpha1
+# kind: Setting
+# metadata:
+#   labels:
+#     cubepaas.com/creator: linkcloud
+#   name: default-replica-count
+#   namespace: {{ .Release.Namespace }}
+# value: {{ .Values.defaultSettings.defaultReplicaCount }}
+# ---
+# apiVersion: longhorn.rancher.io/v1alpha1
+# kind: Setting
+# metadata:
+#   labels:
+#     cubepaas.com/creator: linkcloud
+#   name: guaranteed-engine-cpu
+#   namespace: {{ .Release.Namespace }}
+# value: {{ .Values.defaultSettings.guaranteedEngineCPU }}
+# ---
+# apiVersion: longhorn.rancher.io/v1alpha1
+# kind: Setting
+# metadata:
+#   labels:
+#     cubepaas.com/creator: linkcloud
+#   name: latest-longhorn-version
+#   namespace: {{ .Release.Namespace }}
+# value: ""
+# ---
+# apiVersion: longhorn.rancher.io/v1alpha1
+# kind: Setting
+# metadata:
+#   labels:
+#     cubepaas.com/creator: linkcloud
+#   name: replica-soft-anti-affinity
+#   namespace: {{ .Release.Namespace }}
+# value: {{ .Values.defaultSettings.replicaSoftAntiAffinity }}
+# ---
+# apiVersion: longhorn.rancher.io/v1alpha1
+# kind: Setting
+# metadata:
+#   labels:
+#     cubepaas.com/creator: linkcloud
+#   name: storage-minimal-available-percentage
+#   namespace: {{ .Release.Namespace }}
+# value: {{ .Values.defaultSettings.storageMinimalAvailablePercentage }}
+# ---
+# apiVersion: longhorn.rancher.io/v1alpha1
+# kind: Setting
+# metadata:
+#   labels:
+#     cubepaas.com/creator: linkcloud
+#   name: storage-over-provisioning-percentage
+#   namespace: {{ .Release.Namespace }}
+# value: {{ .Values.defaultSettings.storageOverProvisioningPercentage }}
+# ---
+# apiVersion: longhorn.rancher.io/v1alpha1
+# kind: Setting
+# metadata:
+#   labels:
+#     cubepaas.com/creator: linkcloud
+#   name: taint-toleration
+#   namespace: {{ .Release.Namespace }}
+# value: {{ .Values.defaultSettings.taintToleration }}
+# ---
+# apiVersion: longhorn.rancher.io/v1alpha1
+# kind: Setting
+# metadata:
+#   labels:
+#     cubepaas.com/creator: linkcloud
+#   name: upgrade-checker
+#   namespace: {{ .Release.Namespace }}
+# value: "false"

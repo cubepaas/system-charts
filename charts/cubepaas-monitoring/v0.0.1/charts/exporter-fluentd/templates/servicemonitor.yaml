@@ -18,7 +18,7 @@ spec:
       app: fluentd
   namespaceSelector:
     matchNames:
-      - cattle-logging
+      - cubepaas-logging
   endpoints:
   - port: metric
     interval: 15s

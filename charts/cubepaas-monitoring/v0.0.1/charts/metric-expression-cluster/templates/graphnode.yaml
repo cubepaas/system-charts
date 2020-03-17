@@ -1,4 +1,4 @@
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 kind: ClusterMonitorGraph
 metadata:
   labels:
@@ -22,7 +22,7 @@ spec:
   yAxis:
     unit: percent
 ---
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 kind: ClusterMonitorGraph
 metadata:
   labels:
@@ -46,7 +46,7 @@ spec:
   yAxis:
     unit: number
 ---
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 kind: ClusterMonitorGraph
 metadata:
   labels:
@@ -70,7 +70,7 @@ spec:
   yAxis:
     unit: percent
 ---
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 kind: ClusterMonitorGraph
 metadata:
   labels:
@@ -95,7 +95,7 @@ spec:
   yAxis:
     unit: percent
 ---
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 kind: ClusterMonitorGraph
 metadata:
   labels:
@@ -120,7 +120,7 @@ spec:
   yAxis:
     unit: kbps
 ---
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 kind: ClusterMonitorGraph
 metadata:
   labels:
@@ -145,7 +145,7 @@ spec:
   yAxis:
     unit: kbps
 ---
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 kind: ClusterMonitorGraph
 metadata:
   labels:

@@ -31,7 +31,7 @@ spec:
             - --log-level={{ .Values.logLevel }}
             - --prometheus-config-reloader={{ .Values.image.prometheusConfigReloader.repository }}:{{ .Values.image.prometheusConfigReloader.tag }}
             - --config-reloader-image={{ .Values.image.configmapReload.repository }}:{{ .Values.image.configmapReload.tag }}
-            - --labels=monitoring.cattle.io=true
+            - --labels=monitoring.cubepaas.com=true
             - --crd-apigroup={{ template "operator_api_group" . }}
             - --manage-crds={{ .Values.manageCRDs }}
             - --with-validation={{ .Values.withValidation }}

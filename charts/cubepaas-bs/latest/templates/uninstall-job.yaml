@@ -1,0 +1,30 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  annotations:
+    "helm.sh/hook": pre-delete
+    "helm.sh/hook-delete-policy": hook-succeeded
+  name: storagebs-uninstall
+  namespace: {{ .Release.Namespace }}
+spec:
+  activeDeadlineSeconds: 900
+  backoffLimit: 1
+  template:
+    metadata:
+      name: storagebs-uninstall
+    spec:
+      containers:
+      - name: storagebs-uninstall
+        image: "{{ .Values.image.cubepaas.manager }}:{{ .Values.image.cubepaas.managerTag }}"
+        imagePullPolicy: Always
+        command:
+        - longhorn-manager
+        - uninstall
+        - --force
+        env:
+        - name: CUBEPAAS_NAMESPACE
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.namespace
+      restartPolicy: OnFailure
+      serviceAccountName: storagebs-service-account

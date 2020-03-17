@@ -1,5 +1,5 @@
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-disk-io-writes-bytes-sum-rate
   labels:
@@ -17,7 +17,7 @@ spec:
   description: workload disk io writes bytes sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-disk-io-writes-bytes-sum-rate-details
   labels:
@@ -35,7 +35,7 @@ spec:
   description: workload disk io writes bytes sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-disk-io-reads-bytes-sum-rate
   labels:
@@ -53,7 +53,7 @@ spec:
   description: workload disk io reads bytes sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-disk-io-reads-bytes-sum-rate-details
   labels:
@@ -71,7 +71,7 @@ spec:
   description: workload disk io reads bytes sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-fs-bytes-sum
   labels:
@@ -88,7 +88,7 @@ spec:
   description: workload fs bytes sum
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-fs-bytes-sum-details
   labels:
@@ -105,7 +105,7 @@ spec:
   description: workload fs bytes sum
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-network-transmit-packets-sum-rate
   labels:
@@ -123,7 +123,7 @@ spec:
   description: workload network transmit packets sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-network-transmit-packets-sum-rate-details
   labels:
@@ -141,7 +141,7 @@ spec:
   description: workload network transmit packets sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-network-receive-packets-dropped-sum-rate
   labels:
@@ -159,7 +159,7 @@ spec:
   description: workload network receive packets dropped sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-network-receive-packets-dropped-sum-rate-details
   labels:
@@ -177,7 +177,7 @@ spec:
   description: workload network receive packets dropped sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-cpu-usage-seconds-sum-rate
   labels:
@@ -195,7 +195,7 @@ spec:
   description: workload cpu usage seconds sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-cpu-usage-seconds-sum-rate-details
   labels:
@@ -213,7 +213,7 @@ spec:
   description: workload cpu usage seconds sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-cpu-system-seconds-sum-rate
   labels:
@@ -231,7 +231,7 @@ spec:
   description: workload cpu system seconds sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-cpu-system-seconds-sum-rate-details
   labels:
@@ -249,7 +249,7 @@ spec:
   description: workload cpu system seconds sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-network-receive-bytes-sum-rate
   labels:
@@ -267,7 +267,7 @@ spec:
   description: workload network receive bytes sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-network-receive-bytes-sum-rate-details
   labels:
@@ -285,7 +285,7 @@ spec:
   description: workload network receive bytes sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-network-receive-errors-sum-rate
   labels:
@@ -303,7 +303,7 @@ spec:
   description: workload network receive errors sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-network-receive-errors-sum-rate-details
   labels:
@@ -321,7 +321,7 @@ spec:
   description: workload network receive errors sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-network-receive-packets-sum-rate
   labels:
@@ -339,7 +339,7 @@ spec:
   description: workload network receive packets sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-network-receive-packets-sum-rate-details
   labels:
@@ -357,7 +357,7 @@ spec:
   description: workload network receive packets sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-memory-usage-bytes-sum
   labels:
@@ -374,7 +374,7 @@ spec:
   description: workload memory usage bytes sum
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-memory-usage-bytes-sum-details
   labels:
@@ -391,7 +391,7 @@ spec:
   description: workload memory usage bytes sum
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-memory-usage-percent
   labels:
@@ -409,7 +409,7 @@ spec:
   description: workload memory usage percent
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-memory-usage-percent-details
   labels:
@@ -427,7 +427,7 @@ spec:
   description: workload memory usage percent
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-network-transmit-bytes-sum-rate
   labels:
@@ -445,7 +445,7 @@ spec:
   description: workload network transmit bytes sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-network-transmit-bytes-sum-rate-details
   labels:
@@ -463,7 +463,7 @@ spec:
   description: workload network transmit bytes sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-network-transmit-errors-sum-rate
   labels:
@@ -481,7 +481,7 @@ spec:
   description: workload network transmit errors sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-network-transmit-errors-sum-rate-details
   labels:
@@ -499,7 +499,7 @@ spec:
   description: workload network transmit errors sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-network-transmit-packets-dropped-sum-rate
   labels:
@@ -517,7 +517,7 @@ spec:
   description: workload network transmit packets dropped sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-network-transmit-packets-dropped-sum-rate-details
   labels:
@@ -535,7 +535,7 @@ spec:
   description: workload network transmit packets dropped sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-cpu-user-seconds-sum-rate
   labels:
@@ -553,7 +553,7 @@ spec:
   description: workload cpu user seconds sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-cpu-user-seconds-sum-rate-details
   labels:
@@ -571,7 +571,7 @@ spec:
   description: workload cpu user seconds sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-cpu-cfs-throttled-seconds-sum-rate
   labels:
@@ -588,7 +588,7 @@ spec:
   description: workload cpu cfs throttled seconds sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: workload-cpu-cfs-throttled-seconds-sum-rate-details
   labels:

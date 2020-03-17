@@ -1,5 +1,5 @@
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: cluster-disk-io-reads-bytes-sum-rate
   labels:
@@ -17,7 +17,7 @@ spec:
   description: cluster disk io reads bytes sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: cluster-disk-io-reads-bytes-sum-rate-details
   labels:
@@ -35,7 +35,7 @@ spec:
   description: cluster disk io reads bytes sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: cluster-network-transmit-bytes-sum
   labels:
@@ -53,7 +53,7 @@ spec:
   description: cluster network transmit bytes sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: cluster-network-transmit-bytes-sum-details
   labels:
@@ -71,7 +71,7 @@ spec:
   description: cluster network transmit bytes sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: cluster-cpu-load-5
   labels:
@@ -89,7 +89,7 @@ spec:
   description: cluster cpu load 5
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: cluster-cpu-load-5-details
   labels:
@@ -107,7 +107,7 @@ spec:
   description: cluster cpu load 5
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: cluster-cpu-load-1
   labels:
@@ -125,7 +125,7 @@ spec:
   description: cluster cpu load 1
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: cluster-cpu-load-1-details
   labels:
@@ -143,7 +143,7 @@ spec:
   description: cluster cpu load 1
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: cluster-disk-io-writes-bytes-sum-rate
   labels:
@@ -161,7 +161,7 @@ spec:
   description: cluster disk io writes bytes sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: cluster-disk-io-writes-bytes-sum-rate-details
   labels:
@@ -179,7 +179,7 @@ spec:
   description: cluster disk io writes bytes sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: cluster-fs-usage-percent
   labels:
@@ -198,7 +198,7 @@ spec:
   description: cluster fs usage percent
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: cluster-fs-usage-percent-details
   labels:
@@ -217,7 +217,7 @@ spec:
   description: cluster fs usage percent
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: cluster-network-receive-errors-sum
   labels:
@@ -235,7 +235,7 @@ spec:
   description: cluster network receive errors sum
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: cluster-network-receive-errors-sum-details
   labels:
@@ -253,7 +253,7 @@ spec:
   description: cluster network receive errors sum
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: cluster-cpu-load-15
   labels:
@@ -271,7 +271,7 @@ spec:
   description: cluster cpu load 15
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: cluster-cpu-load-15-details
   labels:
@@ -289,7 +289,7 @@ spec:
   description: cluster cpu load 15
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: cluster-network-receive-bytes-sum
   labels:
@@ -307,7 +307,7 @@ spec:
   description: cluster network receive bytes sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: cluster-network-receive-bytes-sum-details
   labels:
@@ -325,7 +325,7 @@ spec:
   description: cluster network receive bytes sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: cluster-network-receive-packets-sum
   labels:
@@ -343,7 +343,7 @@ spec:
   description: cluster network receive packets sum
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: cluster-network-receive-packets-sum-details
   labels:
@@ -361,7 +361,7 @@ spec:
   description: cluster network receive packets sum
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: cluster-network-transmit-errors-sum
   labels:
@@ -379,7 +379,7 @@ spec:
   description: cluster network transmit errors sum
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: cluster-network-transmit-errors-sum-details
   labels:
@@ -397,7 +397,7 @@ spec:
   description: cluster network transmit errors sum
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: cluster-network-receive-packets-dropped-sum
   labels:
@@ -415,7 +415,7 @@ spec:
   description: cluster network receive packets dropped sum
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: cluster-network-receive-packets-dropped-sum-details
   labels:
@@ -433,7 +433,7 @@ spec:
   description: cluster network receive packets dropped sum
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: cluster-network-transmit-packets-dropped-sum
   labels:
@@ -451,7 +451,7 @@ spec:
   description: cluster network transmit packets dropped sum
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: cluster-network-transmit-packets-dropped-sum-details
   labels:
@@ -469,7 +469,7 @@ spec:
   description: cluster network transmit packets dropped sum
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: cluster-network-transmit-packets-sum
   labels:
@@ -487,7 +487,7 @@ spec:
   description: cluster network transmit packets sum
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: cluster-network-transmit-packets-sum-details
   labels:
@@ -505,7 +505,7 @@ spec:
   description: cluster network transmit packets sum
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: cluster-cpu-usage-seconds-sum-rate
   labels:
@@ -521,7 +521,7 @@ spec:
   description: cluster cpu usage seconds sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: cluster-cpu-usage-seconds-sum-rate-details
   labels:
@@ -537,7 +537,7 @@ spec:
   description: cluster cpu usage seconds sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: cluster-memory-usage-percent
   labels:
@@ -554,7 +554,7 @@ spec:
   description: cluster memory usage percent
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: cluster-memory-usage-percent-details
   labels:

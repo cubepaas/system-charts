@@ -1,5 +1,5 @@
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-cpu-cfs-throttled-seconds-sum-rate
   labels:
@@ -16,7 +16,7 @@ spec:
   description: pod cpu cfs throttled seconds sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-cpu-cfs-throttled-seconds-sum-rate-details
   labels:
@@ -33,7 +33,7 @@ spec:
   description: pod cpu cfs throttled seconds sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-memory-usage-percent
   labels:
@@ -51,7 +51,7 @@ spec:
   description: pod memory usage percent
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-memory-usage-percent-details
   labels:
@@ -69,7 +69,7 @@ spec:
   description: pod memory usage percent
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-fs-bytes-sum
   labels:
@@ -86,7 +86,7 @@ spec:
   description: pod fs bytes sum
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-fs-bytes-sum-details
   labels:
@@ -103,7 +103,7 @@ spec:
   description: pod fs bytes sum
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-network-receive-packets-sum-rate
   labels:
@@ -121,7 +121,7 @@ spec:
   description: pod network receive packets sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-network-receive-packets-sum-rate-details
   labels:
@@ -139,7 +139,7 @@ spec:
   description: pod network receive packets sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-network-transmit-packets-sum-rate
   labels:
@@ -157,7 +157,7 @@ spec:
   description: pod network transmit packets sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-network-transmit-packets-sum-rate-details
   labels:
@@ -175,7 +175,7 @@ spec:
   description: pod network transmit packets sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-cpu-user-seconds-sum-rate
   labels:
@@ -192,7 +192,7 @@ spec:
   description: pod cpu user seconds sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-cpu-user-seconds-sum-rate-details
   labels:
@@ -209,7 +209,7 @@ spec:
   description: pod cpu user seconds sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-disk-io-reads-bytes-sum-rate
   labels:
@@ -227,7 +227,7 @@ spec:
   description: pod disk io reads bytes sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-disk-io-reads-bytes-sum-rate-details
   labels:
@@ -245,7 +245,7 @@ spec:
   description: pod disk io reads bytes sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-network-receive-bytes-sum-rate
   labels:
@@ -263,7 +263,7 @@ spec:
   description: pod network receive bytes sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-network-receive-bytes-sum-rate-details
   labels:
@@ -281,7 +281,7 @@ spec:
   description: pod network receive bytes sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-network-transmit-bytes-sum-rate
   labels:
@@ -299,7 +299,7 @@ spec:
   description: pod network transmit bytes sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-network-transmit-bytes-sum-rate-details
   labels:
@@ -317,7 +317,7 @@ spec:
   description: pod network transmit bytes sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-network-receive-packets-dropped-sum-rate
   labels:
@@ -335,7 +335,7 @@ spec:
   description: pod network receive packets dropped sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-network-receive-packets-dropped-sum-rate-details
   labels:
@@ -353,7 +353,7 @@ spec:
   description: pod network receive packets dropped sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-memory-usage-bytes-sum
   labels:
@@ -370,7 +370,7 @@ spec:
   description: pod memory usage bytes sum
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-memory-usage-bytes-sum-details
   labels:
@@ -387,7 +387,7 @@ spec:
   description: pod memory usage bytes sum
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-disk-io-writes-bytes-sum-rate
   labels:
@@ -405,7 +405,7 @@ spec:
   description: pod disk io writes bytes sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-disk-io-writes-bytes-sum-rate-details
   labels:
@@ -423,7 +423,7 @@ spec:
   description: pod disk io writes bytes sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-network-receive-errors-sum-rate
   labels:
@@ -441,7 +441,7 @@ spec:
   description: pod network receive errors sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-network-receive-errors-sum-rate-details
   labels:
@@ -459,7 +459,7 @@ spec:
   description: pod network receive errors sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-cpu-usage-seconds-sum-rate
   labels:
@@ -476,7 +476,7 @@ spec:
   description: pod CPU usage sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-cpu-usage-seconds-sum-rate-details
   labels:
@@ -493,7 +493,7 @@ spec:
   description: pod CPU usage sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-network-transmit-errors-sum-rate
   labels:
@@ -511,7 +511,7 @@ spec:
   description: pod network transmit errors sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-network-transmit-errors-sum-rate-details
   labels:
@@ -529,7 +529,7 @@ spec:
   description: pod network transmit errors sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-network-transmit-packets-dropped-sum-rate
   labels:
@@ -547,7 +547,7 @@ spec:
   description: pod network transmit packets dropped sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-network-transmit-packets-dropped-sum-rate-details
   labels:
@@ -565,7 +565,7 @@ spec:
   description: pod network transmit packets dropped sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-cpu-system-seconds-sum-rate
   labels:
@@ -582,7 +582,7 @@ spec:
   description: pod cpu system seconds sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: pod-cpu-system-seconds-sum-rate-details
   labels:

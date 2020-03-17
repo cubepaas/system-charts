@@ -1,5 +1,5 @@
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: container-cpu-cfs-throttled-seconds-sum-rate
   labels:
@@ -16,7 +16,7 @@ spec:
   description: container cpu cfs throttled seconds sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: container-cpu-cfs-throttled-seconds-sum-rate-details
   labels:
@@ -33,7 +33,7 @@ spec:
   description: container cpu cfs throttled seconds sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: container-cpu-usage-seconds-sum-rate
   labels:
@@ -50,7 +50,7 @@ spec:
   description: container cpu usage seconds sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: container-cpu-usage-seconds-sum-rate-details
   labels:
@@ -67,7 +67,7 @@ spec:
   description: container cpu usage seconds sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: container-cpu-system-seconds-sum-rate
   labels:
@@ -84,7 +84,7 @@ spec:
   description: container cpu system seconds sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: container-cpu-system-seconds-sum-rate-details
   labels:
@@ -101,7 +101,7 @@ spec:
   description: container cpu system seconds sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: container-cpu-user-seconds-sum-rate
   labels:
@@ -118,7 +118,7 @@ spec:
   description: container cpu user seconds sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: container-cpu-user-seconds-sum-rate-details
   labels:
@@ -135,7 +135,7 @@ spec:
   description: container cpu user seconds sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: container-memory-usage-percent
   labels:
@@ -154,7 +154,7 @@ spec:
   description: container memory usage percent
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: container-memory-usage-percent-details
   labels:
@@ -173,7 +173,7 @@ spec:
   description: container memory usage percent
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: container-memory-usage-bytes-sum
   labels:
@@ -190,7 +190,7 @@ spec:
   description: container memory usage bytes sum
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: container-memory-usage-bytes-sum-details
   labels:
@@ -207,7 +207,7 @@ spec:
   description: container memory usage bytes sum
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: container-fs-bytes-sum
   labels:
@@ -224,7 +224,7 @@ spec:
   description: container fs bytes sum
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: container-fs-bytes-sum-details
   labels:
@@ -241,7 +241,7 @@ spec:
   description: container fs bytes sum
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: container-disk-io-writes-bytes-sum-rate
   labels:
@@ -259,7 +259,7 @@ spec:
   description: container disk io writes bytes sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: container-disk-io-writes-bytes-sum-rate-details
   labels:
@@ -277,7 +277,7 @@ spec:
   description: container disk io writes bytes sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: container-disk-io-reads-bytes-sum-rate
   labels:
@@ -295,7 +295,7 @@ spec:
   description: container disk io reads bytes sum rate
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: container-disk-io-reads-bytes-sum-rate-details
   labels:

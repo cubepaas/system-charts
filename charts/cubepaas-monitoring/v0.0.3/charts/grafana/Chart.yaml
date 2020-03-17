@@ -1,0 +1,7 @@
+apiVersion: v1
+description: Creates Grafana instance for Kubernetes which maintaining by Cubepaas.
+engine: gotpl
+maintainers:
+- name: thxCode
+name: grafana
+version: 0.0.1

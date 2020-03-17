@@ -99,7 +99,7 @@ metadata:
   name: {{ include "app.fullname" . }}
 rules:
 - apiGroups:
-  - "monitoring.cattle.io"
+  - "monitoring.cubepaas.com"
   resources:
   - prometheus
   verbs:

@@ -7,7 +7,7 @@ metadata:
     chart: {{ template "app.version" . }}
     heritage: {{ .Release.Service }}
     release: {{ .Release.Name }}
-    source: rancher-monitoring
+    source: cubepaas-monitoring
     {{- if .Values.serviceMonitor.labels }}
 {{ toYaml .Values.serviceMonitor.labels | indent 4 }}
     {{- end }}
@@ -19,7 +19,7 @@ spec:
       app: {{ template "app.name" . }}
       chart: {{ template "app.version" . }}
       release: {{ .Release.Name }}
-      monitoring.cattle.io: "true"
+      monitoring.cubepaas.com: "true"
   namespaceSelector:
     matchNames:
       - {{ .Release.Namespace | quote }}

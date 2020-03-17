@@ -1,0 +1,60 @@
+# Default values for cubepaasBS.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+image:
+  cubepaas:
+    engine: registry.cn-hangzhou.aliyuncs.com/link-cloud/cubepaas-bs-engine
+    engineTag: v0.6.0
+    manager: registry.cn-hangzhou.aliyuncs.com/link-cloud/cubepaas-bs-manager
+    managerTag: v0.6.0
+  pullPolicy: IfNotPresent
+
+service:
+  manager:
+    type: ClusterIP
+    nodePort: ""
+
+# deploy either 'flexvolume' or 'csi' driver
+driver: csi
+
+persistence:
+  # for GKE uses /home/kubernetes/flexvolume/ instead, User can find the correct directory by running ps aux|grep kubelet on the host and check the --volume-plugin-dir parameter.
+  # If there is none, the default /usr/libexec/kubernetes/kubelet-plugins/volume/exec/ will be used.
+  flexvolumePath:
+  defaultClass: "false"
+  defaultClassReplicaCount: "3"
+
+s3: s3://127.0.0.1
+
+
+csi:
+  attacherImage:
+  provisionerImage:
+  driverRegistrarImage:
+  kubeletRootDir:
+  attacherReplicaCount:
+  provisionerReplicaCount:
+
+defaultSettings:
+  backupTarget:
+  backupTargetCredentialSecret:
+  createDefaultDiskLabeledNodes:
+  defaultDataPath:
+  replicaSoftAntiAffinity:
+  storageOverProvisioningPercentage:
+  storageMinimalAvailablePercentage:
+  upgradeChecker: false
+  defaultReplicaCount:
+  guaranteedEngineCPU:
+  defaultLonghornStaticStorageClass: storagebs
+  backupstorePollInterval:
+  taintToleration:
+
+resources: 
+  manager:
+    limits:
+     cpu: 100m
+     memory: 128Mi
+    requests:
+     cpu: 100m
+     memory: 128Mi

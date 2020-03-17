@@ -1,5 +1,5 @@
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: input-record-number
   labels:
@@ -15,7 +15,7 @@ spec:
   description: Fluentd input status num records total
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: input-record-number-details
   labels:
@@ -31,7 +31,7 @@ spec:
   description: Fluentd input status num records total
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: output-record-number
   labels:
@@ -47,7 +47,7 @@ spec:
   description: Fluentd output status num records total
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: output-record-number-details
   labels:
@@ -63,7 +63,7 @@ spec:
   description: Fluentd output status num records total
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: output-errors
   labels:
@@ -79,7 +79,7 @@ spec:
   description: Fluentd output errors number
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: output-errors-details
   labels:
@@ -95,7 +95,7 @@ spec:
   description: Fluentd output errors number
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: buffer-queue-length
   labels:
@@ -111,7 +111,7 @@ spec:
   description: Fluentd Buffer queue length
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: buffer-queue-length-details
   labels:

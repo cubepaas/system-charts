@@ -1,5 +1,5 @@
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: ingresscontroller-nginx-connection-reading
   labels:
@@ -15,7 +15,7 @@ spec:
   description: ingresscontroller nginx connection reading
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: ingresscontroller-nginx-connection-reading-details
   labels:
@@ -31,7 +31,7 @@ spec:
   description: ingresscontroller nginx connection reading
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: ingresscontroller-nginx-connection-waiting
   labels:
@@ -47,7 +47,7 @@ spec:
   description: ingresscontroller nginx connection waiting
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: ingresscontroller-nginx-connection-waiting-details
   labels:
@@ -63,7 +63,7 @@ spec:
   description: ingresscontroller nginx connection waiting
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: ingresscontroller-nginx-connection-writing
   labels:
@@ -79,7 +79,7 @@ spec:
   description: ingresscontroller nginx connection writing
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: ingresscontroller-nginx-connection-writing-details
   labels:
@@ -95,7 +95,7 @@ spec:
   description: ingresscontroller nginx connection writing
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: ingresscontroller-nginx-connection-accepted
   labels:
@@ -111,7 +111,7 @@ spec:
   description: ingresscontroller nginx connection accepted
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: ingresscontroller-nginx-connection-accepted-details
   labels:
@@ -127,7 +127,7 @@ spec:
   description: ingresscontroller nginx connection accepted
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: ingresscontroller-nginx-connection-active
   labels:
@@ -143,7 +143,7 @@ spec:
   description: ingresscontroller nginx connection active
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: ingresscontroller-nginx-connection-active-details
   labels:
@@ -159,7 +159,7 @@ spec:
   description: ingresscontroller nginx connection active
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: ingresscontroller-nginx-connection-handled
   labels:
@@ -175,7 +175,7 @@ spec:
   description: ingresscontroller nginx connection handled
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: ingresscontroller-nginx-connection-handled-details
   labels:
@@ -191,7 +191,7 @@ spec:
   description: ingresscontroller nginx connection handled
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: ingresscontroller-upstream-response-seconds-by-host
   labels:
@@ -207,7 +207,7 @@ spec:
   description: ingresscontroller nginx upstream response seconds by host
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: ingresscontroller-upstream-response-seconds-by-host-details
   labels:
@@ -223,7 +223,7 @@ spec:
   description: ingresscontroller nginx upstream response seconds by host
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: ingresscontroller-nginx-process-seconds-by-path
   labels:
@@ -239,7 +239,7 @@ spec:
   description: ingresscontroller nginx request duration by path
 ---
 kind: MonitorMetric
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 metadata:
   name: ingresscontroller-nginx-process-seconds-by-path-details
   labels:

@@ -16,7 +16,7 @@ data:
       disableDeletion: false
       updateIntervalSeconds: 0 #never
       options:
-        path: /var/lib/grafana/rancher-dashboards
+        path: /var/lib/grafana/cubepaas-dashboards
 
 
   datasources.yaml: |+

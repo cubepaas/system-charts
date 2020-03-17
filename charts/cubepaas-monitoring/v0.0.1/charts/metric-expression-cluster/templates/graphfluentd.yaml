@@ -1,4 +1,4 @@
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 kind: ClusterMonitorGraph
 metadata:
   labels:
@@ -6,11 +6,11 @@ metadata:
     source: cubepaas-monitoring
     level: cluster
     component: fluentd
-    cluster-graph: rancher-component
+    cluster-graph: cubepaas-component
   name: fluentd-input-record-number
 spec:
   resourceType: fluentd
-  displayResourceType: rancher-component
+  displayResourceType: cubepaas-component
   priority: 300
   title: fluentd-input-record-number
   metricsSelector:
@@ -24,7 +24,7 @@ spec:
   yAxis:
     unit: number
 ---
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 kind: ClusterMonitorGraph
 metadata:
   labels:
@@ -32,11 +32,11 @@ metadata:
     source: cubepaas-monitoring
     level: cluster
     component: fluentd
-    cluster-graph: rancher-component
+    cluster-graph: cubepaas-component
   name: fluentd-output-record-number
 spec:
   resourceType: fluentd
-  displayResourceType: rancher-component
+  displayResourceType: cubepaas-component
   priority: 301
   title: fluentd-output-record-number
   metricsSelector:
@@ -50,7 +50,7 @@ spec:
   yAxis:
     unit: number
 ---
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 kind: ClusterMonitorGraph
 metadata:
   labels:
@@ -58,11 +58,11 @@ metadata:
     source: cubepaas-monitoring
     level: cluster
     component: fluentd
-    cluster-graph: rancher-component
+    cluster-graph: cubepaas-component
   name: fluentd-output-errors
 spec:
   resourceType: fluentd
-  displayResourceType: rancher-component
+  displayResourceType: cubepaas-component
   priority: 301
   title: fluentd-output-errors
   metricsSelector:
@@ -76,7 +76,7 @@ spec:
   yAxis:
     unit: number
 ---
-apiVersion: management.cattle.io/v3
+apiVersion: management.cubepaas.com/v3
 kind: ClusterMonitorGraph
 metadata:
   labels:
@@ -84,11 +84,11 @@ metadata:
     source: cubepaas-monitoring
     level: cluster
     component: fluentd
-    cluster-graph: rancher-component
+    cluster-graph: cubepaas-component
   name: fluentd-buffer-queue-length
 spec:
   resourceType: fluentd
-  displayResourceType: rancher-component
+  displayResourceType: cubepaas-component
   priority: 301
   title: fluentd-buffer-queue-length
   metricsSelector:

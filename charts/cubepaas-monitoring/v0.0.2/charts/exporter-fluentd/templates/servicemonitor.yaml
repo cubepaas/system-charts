@@ -21,7 +21,7 @@ spec:
       {{- end }}
   namespaceSelector:
     matchNames:
-    - cattle-logging
+    - cubepaas-logging
   endpoints:
   - port: {{ .Values.ports.metrics.name }}
     interval: 15s

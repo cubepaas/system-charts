@@ -1,10 +1,14 @@
 dependencies:
-  - name: fluentd
+  - name: elasticsearch
     version: 0.0.1
-    condition: fluentd.enabled
-    repository: "file://./charts/fluentd/"
+    condition: elasticsearch.enabled
+    repository: "file://./charts/elasticsearch/"
 
-  - name: fluentd-tester
+  - name: filebeat
     version: 0.0.1
-    condition: fluentd-tester.enabled
-    repository: "file://./charts/fluentd-tester/"
+    condition: filebeat.enabled
+    repository: "file://./charts/filebeat/"
+  
+  - name: reloader
+    version: 0.0.1
+    repository: "file://./charts/reloader/"

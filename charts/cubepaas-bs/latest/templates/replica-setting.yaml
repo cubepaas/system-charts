@@ -1,0 +1,8 @@
+apiVersion: longhorn.rancher.io/v1alpha1
+kind: Setting
+metadata:
+  labels:
+    cubepaas.com/creator: linkcloud
+  name: default-replica-count
+  namespace: {{ .Release.Namespace }}
+value: "{{ .Values.defaultSettings.defaultReplicaCount }}"
