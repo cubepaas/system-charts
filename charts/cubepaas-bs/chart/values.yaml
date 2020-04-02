@@ -4,9 +4,9 @@
 image:
   cubepaas:
     engine: registry.cn-hangzhou.aliyuncs.com/link-cloud/cubepaas-bs-engine
-    engineTag: v0.7.5
+    engineTag: v0.7.7
     manager: registry.cn-hangzhou.aliyuncs.com/link-cloud/cubepaas-bs-manager
-    managerTag: v0.7.6
+    managerTag: v0.7.7
   pullPolicy: IfNotPresent
 
 service:
