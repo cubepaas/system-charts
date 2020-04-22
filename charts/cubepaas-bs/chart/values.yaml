@@ -4,7 +4,7 @@
 image:
   storagebs:
     engine: registry.cn-hangzhou.aliyuncs.com/link-cloud/cubepaas-bs-engine
-    engineTag: v0.8.2
+    engineTag: v0.8.3
     manager: registry.cn-hangzhou.aliyuncs.com/link-cloud/cubepaas-bs-manager
     managerTag: v0.8.2
     instanceManager: registry.cn-hangzhou.aliyuncs.com/link-cloud/storagebs-im
