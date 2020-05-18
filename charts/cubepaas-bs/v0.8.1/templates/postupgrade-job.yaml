@@ -1,0 +1,33 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  annotations:
+    "helm.sh/hook": post-upgrade
+    "helm.sh/hook-delete-policy": hook-succeeded,before-hook-creation
+  name: storagebs-post-upgrade
+  namespace: {{ .Release.Namespace }}
+spec:
+  activeDeadlineSeconds: 900
+  backoffLimit: 1
+  template:
+    metadata:
+      name: storagebs-post-upgrade
+    spec:
+      containers:
+      - name: storagebs-post-upgrade
+        image: "{{ .Values.image.storagebs.manager }}:{{ .Values.image.storagebs.managerTag }}"
+        imagePullPolicy: Always
+        command:
+        - longhorn-manager
+        - post-upgrade
+        env:
+        - name: POD_NAMESPACE
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.namespace
+      restartPolicy: OnFailure
+      {{- if .Values.defaultSettings.registrySecret }}
+      imagePullSecrets:
+      - name: {{ .Values.defaultSettings.registrySecret }}
+      {{- end }}
+      serviceAccountName: storagebs-service-account

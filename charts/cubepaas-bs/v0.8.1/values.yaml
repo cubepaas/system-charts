@@ -1,0 +1,77 @@
+# Default values for longhorn.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+image:
+  storagebs:
+    engine: registry.cn-hangzhou.aliyuncs.com/link-cloud/cubepaas-bs-engine
+    engineTag: v0.8.4
+    manager: registry.cn-hangzhou.aliyuncs.com/link-cloud/cubepaas-bs-manager
+    managerTag: v0.8.4
+    instanceManager: registry.cn-hangzhou.aliyuncs.com/link-cloud/storagebs-im
+    instanceManagerTag: v0414
+  pullPolicy: IfNotPresent
+
+service:
+  manager:
+    type: ClusterIP
+    nodePort: ""
+
+persistence:
+  defaultClass: false
+  defaultClassReplicaCount: 3
+
+csi:
+  attacherImage:
+  provisionerImage:
+  nodeDriverRegistrarImage:
+  resizerImage:
+  kubeletRootDir:
+  attacherReplicaCount:
+  provisionerReplicaCount:
+
+defaultSettings:
+  backupTarget:
+  backupTargetCredentialSecret: cubepaas-bs-credential
+  createDefaultDiskLabeledNodes:
+  defaultDataPath:
+  replicaSoftAntiAffinity:
+  storageOverProvisioningPercentage:
+  storageMinimalAvailablePercentage:
+  upgradeChecker: false
+  hostNetwork: true
+  defaultReplicaCount:
+  guaranteedEngineCPU:
+  defaultLonghornStaticStorageClass: storagebs
+  backupstorePollInterval:
+  taintToleration:
+  interfaceName: 
+  registrySecret:
+
+privateRegistry:
+  registryUrl:
+  registryUser:
+  registryPasswd:
+
+resources: 
+  manager:
+    limits:
+     cpu: 100m
+     memory: 128Mi
+    requests:
+     cpu: 100m
+     memory: 128Mi
+  # We usually recommend not to specify default resources and to leave this as a conscious
+  # choice for the user. This also increases chances charts run on environments with little
+  # resources, such as Minikube. If you do want to specify resources, uncomment the following
+  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+  # limits:
+  #  cpu: 100m
+  #  memory: 128Mi
+  # requests:
+  #  cpu: 100m
+  #  memory: 128Mi
+  #
+awsSecret:
+  accessKey:
+  secretKey:
+  endPoints:

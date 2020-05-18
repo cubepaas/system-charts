@@ -1,0 +1,8 @@
+apiVersion: longhorn.io/v1beta1
+kind: Setting
+metadata:
+  labels:
+    cubepaas.com/creator: linkcloud
+  name: replica-soft-anti-affinity
+  namespace: {{ .Release.Namespace }}
+value: "{{ .Values.defaultSettings.replicaSoftAntiAffinity }}"

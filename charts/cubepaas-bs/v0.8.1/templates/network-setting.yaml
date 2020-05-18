@@ -1,0 +1,8 @@
+apiVersion: longhorn.io/v1beta1
+kind: Setting
+metadata:
+  labels:
+    cubepaas.com/creator: linkcloud
+  name: host-network
+  namespace: {{ .Release.Namespace }}
+value: "{{ .Values.defaultSettings.hostNetwork }}"
