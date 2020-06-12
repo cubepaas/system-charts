@@ -6,7 +6,7 @@ image:
     engine: registry.cn-hangzhou.aliyuncs.com/link-cloud/cubepaas-bs-engine
     engineTag: v0.8.5
     manager: registry.cn-hangzhou.aliyuncs.com/link-cloud/cubepaas-bs-manager
-    managerTag: v0.8.4
+    managerTag: v0.8.5
     instanceManager: registry.cn-hangzhou.aliyuncs.com/link-cloud/storagebs-im
     instanceManagerTag: v0414
   pullPolicy: IfNotPresent

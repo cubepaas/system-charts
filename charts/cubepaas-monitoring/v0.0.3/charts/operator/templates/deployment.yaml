@@ -38,6 +38,7 @@ spec:
         chart: {{ template "app.version" . }}
         release: {{ .Release.Name }}
     spec:
+      priorityClassName: cubepaas-priority
       containers:
         - name: prometheus-operator
           image: {{ template "system_default_registry" . }}{{ .Values.image.repository }}:{{ .Values.image.tag }}

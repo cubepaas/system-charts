@@ -13,6 +13,7 @@ spec:
       labels:
         app: storagebs-driver-deployer
     spec:
+      priorityClassName: cubepaas-priority
       initContainers:
         - name: wait-storagebs-manager
           image: "{{ .Values.image.storagebs.manager }}:{{ .Values.image.storagebs.managerTag }}"

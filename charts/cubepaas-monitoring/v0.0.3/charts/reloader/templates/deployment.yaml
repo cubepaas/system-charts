@@ -37,6 +37,7 @@ spec:
 {{ toYaml .Values.reloader.matchLabels | indent 8 }}
 {{- end }}
     spec:
+      priorityClassName: cubepaas-priority
       containers:
       - env:
       {{- range $name, $value := .Values.reloader.deployment.env.open }}
