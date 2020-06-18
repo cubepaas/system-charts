@@ -14,7 +14,6 @@ spec:
       labels:
         app: storagebs-manager
     spec:
-      priorityClassName: cubepaas-priority
       initContainers:
       - name: install
         image: registry.cn-hangzhou.aliyuncs.com/link-cloud/initcubepaas-bs:v0.6.0
