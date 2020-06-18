@@ -48,7 +48,6 @@ spec:
           subPath: modify-datasource-plugin-json.sh
         - name: grafana-static-contents
           mountPath: /host
-      priorityClassName: cubepaas-priority
       containers:
       - name: grafana
         image: {{ template "system_default_registry" . }}{{ .Values.image.repository }}:{{ .Values.image.tag }}
