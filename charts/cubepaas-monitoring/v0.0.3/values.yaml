@@ -3,13 +3,13 @@ operator:
   enabledRBAC: true
   apiGroup: "monitoring.coreos.com"
   image:
-    repository: registry.cn-hangzhou.aliyuncs.com/link-cloud/coreos-prometheus-operator
+    repository: harbor.test.geely.com/public/coreos-prometheus-operator
     tag: v0.32.0
     prometheusConfigReloader:
-      repository: registry.cn-hangzhou.aliyuncs.com/link-cloud/coreos-prometheus-config-reloader
+      repository: harbor.test.geely.com/public/coreos-prometheus-config-reloader
       tag: v0.32.0
     configmapReload:
-      repository: registry.cn-hangzhou.aliyuncs.com/link-cloud/coreos-configmap-reload
+      repository: harbor.test.geely.com/public/coreos-configmap-reload
       tag: v0.0.1
   resources:
     limits:
@@ -144,7 +144,7 @@ exporter-node:
   enabled: false
   apiGroup: "monitoring.coreos.com"
   image:
-    repository: registry.cn-hangzhou.aliyuncs.com/link-cloud/prom-node-exporter
+    repository: harbor.test.geely.com/public/prom-node-exporter
     tag: v0.17.0
   nodeSelectors: []
   resources:
@@ -168,7 +168,7 @@ exporter-kube-state:
   enabled: false
   apiGroup: "monitoring.coreos.com"
   image:
-    repository: registry.cn-hangzhou.aliyuncs.com/link-cloud/coreos-kube-state-metrics
+    repository: harbor.test.geely.com/public/coreos-kube-state-metrics
     tag: v1.8.0
   nodeSelectors: []
   resources:
@@ -189,7 +189,7 @@ alertmanager:
   enabled: false
   apiGroup: "monitoring.coreos.com"
   image:
-    repository: registry.cn-hangzhou.aliyuncs.com/link-cloud/prom-alertmanager
+    repository: harbor.test.geely.com/public/prom-alertmanager
     tag: v0.17.0
   nodeSelectors: []
   resources:
@@ -233,13 +233,13 @@ grafana:
   level: cluster
   apiGroup: "monitoring.coreos.com"
   image:
-    repository: registry.cn-hangzhou.aliyuncs.com/link-cloud/grafana-grafana
+    repository: harbor.test.geely.com/public/grafana-grafana
     tag: 6.3.6
     tool:
-      repository: registry.cn-hangzhou.aliyuncs.com/link-cloud/prometheus-auth
+      repository: harbor.test.geely.com/public/prometheus-auth
       tag: v0.2.0
     proxy:
-      repository: registry.cn-hangzhou.aliyuncs.com/link-cloud/nginx
+      repository: harbor.test.geely.com/public/nginx
       tag: 1.17.4-alpine
   nodeSelectors: []
   resources:
@@ -293,13 +293,13 @@ prometheus:
           fieldPath: status.podIP
   apiGroup: "monitoring.coreos.com"
   image:
-    repository: registry.cn-hangzhou.aliyuncs.com/link-cloud/prom-prometheus
+    repository: harbor.test.geely.com/public/prom-prometheus
     tag: v2.11.1
     auth:
-      repository: registry.cn-hangzhou.aliyuncs.com/link-cloud/prometheus-auth
+      repository: harbor.test.geely.com/public/prometheus-auth
       tag: v0.2.0
     proxy:
-      repository: registry.cn-hangzhou.aliyuncs.com/link-cloud/nginx
+      repository: harbor.test.geely.com/public/nginx
       tag: 1.17.4-alpine
   nodeSelectors: []
   logFormat: "logfmt"
