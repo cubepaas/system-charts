@@ -29,7 +29,7 @@ spec:
       serviceAccountName: {{ if .Values.rbac.create }}{{ template "nfs-provisioner.fullname" . }}{{ else }}{{ .Values.rbac.serviceAccountName | quote }}{{ end }}
       containers:
         - name: {{ .Chart.Name }}
-          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          image: "{{ .Values.global.systemDefaultRegistry }}/{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: nfs

@@ -6,10 +6,12 @@ replicaCount: 1
 
 # imagePullSecrets:
 
+global:
+    systemDefaultRegistry: registry.cn-hangzhou.aliyuncs.com
 image:
 #  repository: quay.io/kubernetes_incubator/nfs-provisioner
 #  repository: ranchercharts/kubernetes_incubator-nfs-provisioner
-  repository: registry.cn-hangzhou.aliyuncs.com/link-cloud/kubernetes_incubator-nfs-provisioner
+  repository: link-cloud/kubernetes_incubator-nfs-provisioner
   tag: v2.2.1-k8s1.12
 #  tag: v1.0.9
   pullPolicy: IfNotPresent
