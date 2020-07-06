@@ -35,10 +35,10 @@ serviceAccount:
 resources: 
   requests:
     cpu: 100m
-    memory: 128Mi
+    memory: 1000Mi
   limits:
     cpu: 300m
-    memory: 328Mi
+    memory: 1500Mi
 
 rules:
   default: false

@@ -136,7 +136,12 @@ spec:
   serviceAccountName: {{ default (default (include "app.fullname" .) .Values.serviceAccountName) .Values.serviceAccountNameOverride }}
 {{- end }}
 {{- if or (.Values.serviceMonitorSelector) (eq .Values.level "project") }}
-  serviceMonitorNamespaceSelector: {}
+  serviceMonitorNamespaceSelector:
+    matchExpression:
+    - key: openshift.io/cluster-monitoring,
+      operator: NotIn,
+      values:
+      - true
   serviceMonitorSelector:
 {{ toYaml .Values.serviceMonitorSelector | indent 4 }}
 {{- end }}
@@ -145,7 +150,9 @@ spec:
   - bearerTokenFile: /var/run/secrets/kubernetes.io/serviceaccount/token
     url: {{ printf "%s%s" .Values.sync.target .Values.sync.path }}
 {{- end }}
-  ruleSelector: {}
+  ruleSelector:
+    matchLabels:
+      cubepaas.com/creator: linkcloud
   ruleNamespaceSelector: {}
 {{- if or .Values.storageSpec .Values.persistence.enabled }}
   storage:
