@@ -45,6 +45,13 @@ spec:
       action: replace
       regex: (.+)
       replacement: $1
+    metricRelabelings:
+    - sourceLabels:
+      - pod_name
+      targetLabel: pod
+      action: replace
+      regex: (.+)
+      replacement: $1
   - port: https-metrics
     scheme: https
     path: /metrics/cadvisor
@@ -102,12 +109,12 @@ spec:
       sourceLabels:
       - container
       targetLabel: container_name
-    - action: replace
+    - sourceLabels:
+      - pod_name
+      targetLabel: pod
+      action: replace
       regex: (.+)
       replacement: $1
-      sourceLabels:
-      - pod
-      targetLabel: pod_name
   {{- else }}
   - port: http-metrics
     relabelings:
@@ -123,6 +130,13 @@ spec:
       action: replace
       regex: (.+)
       replacement: $1
+    metricRelabelings:
+    - sourceLabels:
+      - pod_name
+      targetLabel: pod
+      action: replace
+      regex: (.+)
+      replacement: $1
   - port: http-metrics
     path: /metrics/cadvisor
     honorLabels: true
@@ -166,10 +180,10 @@ spec:
       sourceLabels:
       - container
       targetLabel: container_name
-    - action: replace
+    - sourceLabels:
+      - pod_name
+      targetLabel: pod
+      action: replace
       regex: (.+)
       replacement: $1
-      sourceLabels:
-      - pod
-      targetLabel: pod_name
   {{- end }}
