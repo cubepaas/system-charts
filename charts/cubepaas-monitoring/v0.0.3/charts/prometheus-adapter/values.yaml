@@ -2,7 +2,7 @@
 affinity: {}
 
 image:
-  repository: registry.cn-hangzhou.aliyuncs.com/link-cloud/k8s-prometheus-adapter-amd64
+  repository: harbor.test.geely.com/public/k8s-prometheus-adapter-amd64
   tag: v0.7.0
   pullPolicy: IfNotPresent
 

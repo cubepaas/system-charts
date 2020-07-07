@@ -7,7 +7,7 @@ reloader:
       provider: stakater
       group: com.stakater.platform
     image:
-      name: registry.cn-hangzhou.aliyuncs.com/link-cloud/reloader
+      name: harbor.test.geely.com/public/reloader
       tag: "v0.0.43"
       pullPolicy: IfNotPresent
     # Support for extra environment variables.

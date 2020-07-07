@@ -5,7 +5,7 @@
 replicaCount: 2
 
 image:
-  repository: registry.cn-hangzhou.aliyuncs.com/link-cloud/dingtalk-server
+  repository: harbor.test.geely.com/public/dingtalk-server
   tag: latest
   pullPolicy: Always
 
