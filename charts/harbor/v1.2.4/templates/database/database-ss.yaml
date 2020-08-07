@@ -31,7 +31,7 @@ spec:
       {{- end }}
       initContainers:
       - name: "change-permission-of-directory"
-        image: "registry.cn-hangzhou.aliyuncs.com/link-cloud/busybox:latest"
+        image: {{ template "system_default_registry" . }}/link-cloud/busybox:latest
         imagePullPolicy: {{ .Values.imagePullPolicy }}
         command: ["/bin/sh"]
         args: ["-c", "chown -R 999:999 /var/lib/postgresql/data"]

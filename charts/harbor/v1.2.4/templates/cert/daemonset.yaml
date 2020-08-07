@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: registry-ca
-        image: registry.cn-hangzhou.aliyuncs.com/link-cloud/busybox:latest
+        image: {{ template "system_default_registry" . }}link-cloud/busybox:latest
         command: [ 'sh' ]
         args:
           - '-c'

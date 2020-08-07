@@ -4,18 +4,18 @@ metadata:
   name: {{ .Release.Name }}-harbor-registry-hpa
   namespace: {{ .Release.Namespace }}
 spec:
-  maxReplicas: 3
+  maxReplicas: 8
   metrics:
   - resource:
       name: cpu
       target:
-        averageValue: 320m
+        averageValue: 640m
         type: AverageValue
     type: Resource
   - resource:
       name: memory
       target:
-        averageValue: 400Mi
+        averageValue: 800Mi
         type: AverageValue
     type: Resource
   minReplicas: 1
