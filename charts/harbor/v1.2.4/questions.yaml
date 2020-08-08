@@ -507,7 +507,7 @@ questions:
   label: Enable Notary
   group: "Notary, Clair & Cert"
 - variable: chartmuseum.enabled
-  default: false
+  default: true
   description: "Enable Chartmuseum to support Helm chart repository in Harbor"
   type: boolean
   label: Enable Helm Chart Repository in Harbor

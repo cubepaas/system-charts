@@ -1,7 +1,7 @@
 apiVersion: autoscaling/v2beta2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: {{ .Release.Name }}-harbor-registry-hpa
+  name: {{ .Release.Name }}-harbor-jobservice-hpa
   namespace: {{ .Release.Namespace }}
 spec:
   maxReplicas: 8
@@ -9,7 +9,7 @@ spec:
   - resource:
       name: cpu
       target:
-        averageValue: 640m
+        averageValue: 400m
         type: AverageValue
     type: Resource
   - resource:
@@ -22,4 +22,4 @@ spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: {{ .Release.Name }}-harbor-registry
+    name: {{ .Release.Name }}-jobservice-registry
