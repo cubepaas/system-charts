@@ -495,7 +495,7 @@ questions:
   group: "Redis Settings"
 # clair and notary options
 - variable: clair.enabled
-  default: true
+  default: false
   description: "Enable Clair for vulnerability static analysis of containers images"
   type: boolean
   label: Enable Clair
