@@ -144,6 +144,14 @@ persistence:
       subPath: ""
       accessMode: ReadWriteOnce
       size: 300Gi
+    # If external Redis is used, the following settings for Redis will
+    # be ignored
+    redis:
+      existingClaim: ""
+      storageClass: ""
+      subPath: ""
+      accessMode: ReadWriteOnce
+      size: 300Gi
   # Define which storage backend is used for registry and chartmuseum to store
   # images and charts. Refer to
   # https://github.com/docker/distribution/blob/master/docs/configuration.md#storage
@@ -400,7 +408,7 @@ chartmuseum:
   replicas: 1
   resources:
     requests:
-      memory: 512Mi
+      memory: 256Mi
       cpu: 200m
   nodeSelector: {}
   tolerations: []
@@ -533,7 +541,7 @@ redis:
   podAnnotations: {}
 
 cert:
-  enabled: true
+  enabled: false
 
 global:
   systemDefaultRegistry: ""

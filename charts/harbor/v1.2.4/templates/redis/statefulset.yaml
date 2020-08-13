@@ -52,9 +52,16 @@ spec:
         - name: data
           mountPath: /var/lib/redis
           subPath: {{ $redis.subPath }}
+      {{- if not .Values.persistence.enabled }}
       volumes:
       - name: data
         emptyDir: {}
+      {{- else if $redis.existingClaim }}
+      volumes:
+      - name: data
+        persistentVolumeClaim:
+          claimName: {{ $redis.existingClaim }}
+      {{- end -}}
     {{- with .Values.redis.internal.nodeSelector }}
       nodeSelector:
 {{ toYaml . | indent 8 }}
@@ -67,4 +74,23 @@ spec:
       tolerations:
 {{ toYaml . | indent 8 }}
     {{- end }}
-  {{- end }}
+  {{- if and .Values.persistence.enabled (not $redis.existingClaim) }}
+  volumeClaimTemplates:
+  - metadata:
+      name: data
+      labels:
+{{ include "harbor.labels" . | indent 8 }}
+    spec:
+      accessModes: [{{ $redis.accessMode | quote }}]
+      {{- if $redis.storageClass }}
+      {{- if (eq "-" $redis.storageClass) }}
+      storageClassName: ""
+      {{- else }}
+      storageClassName: "{{ $redis.storageClass }}"
+      {{- end }}
+      {{- end }}
+      resources:
+        requests:
+          storage: {{ $redis.size | quote }}
+  {{- end -}}
+  {{- end -}}
