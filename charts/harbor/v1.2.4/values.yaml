@@ -418,7 +418,7 @@ chartmuseum:
   podAnnotations: {}
 
 clair:
-  enabled: true
+  enabled: false
   image:
     repository: link-cloud/goharbor-clair-photon
     tag: v2.1.0-v1.9.4
