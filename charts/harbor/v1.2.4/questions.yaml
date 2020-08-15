@@ -513,7 +513,7 @@ questions:
   label: Enable Helm Chart Repository in Harbor
   group: "Notary, Clair & Cert"
 - variable: cert.enabled
-  default: true
+  default: false
   description: "Enable cert to distribute Harbor CA certs to each node under `/etc/docker/certs.d/` path"
   type: boolean
   label: Enable Cert DaemonSet
