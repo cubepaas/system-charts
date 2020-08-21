@@ -6,7 +6,7 @@ replicaCount: 2
 
 image:
   repository: link-cloud/dingtalk-server
-  tag: latest
+  tag: v1
   pullPolicy: Always
 
 imagePullSecrets: []
