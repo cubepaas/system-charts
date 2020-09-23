@@ -56,7 +56,7 @@ spec:
             memory: {{ .Values.resources.manager.limits.memory }}
           requests:
             cpu: {{ .Values.resources.manager.requests.cpu }}
-            memory: {{ .Values.resources.manager.requests.cpu }}
+            memory: {{ .Values.resources.manager.requests.memory }}
         volumeMounts:
         - name: dev
           mountPath: /host/dev/
