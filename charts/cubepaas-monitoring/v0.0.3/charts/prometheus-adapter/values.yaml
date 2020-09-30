@@ -12,7 +12,7 @@ metricsRelistInterval: 1m
 
 nodeSelector: {}
 
-priorityClassName: ""
+priorityClassName: cubepaas-priority
 
 # Url to access prometheus
 prometheus:

@@ -8,6 +8,7 @@ metadata:
     release: {{ .Release.Name }}
   name: {{ .Release.Name }}
 spec:
+  priorityClassName: cubepaas-priority
 {{- if .Values.securityContext }}
   securityContext:
 {{ toYaml .Values.securityContext | indent 4 }}
