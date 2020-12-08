@@ -56,12 +56,18 @@ spec:
             port: https
             scheme: HTTPS
           initialDelaySeconds: 30
+          periodSeconds: 10
+          successThreshold: 1
+          timeoutSeconds: 10
         readinessProbe:
           httpGet:
             path: /healthz
             port: https
             scheme: HTTPS
           initialDelaySeconds: 30
+          periodSeconds: 10
+          successThreshold: 1
+          timeoutSeconds: 10
         {{- if .Values.resources }}
         resources:
           {{- toYaml .Values.resources | nindent 10 }}
