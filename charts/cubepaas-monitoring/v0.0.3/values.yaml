@@ -164,6 +164,28 @@ exporter-node:
   ##
   serviceAccountName: ""
 
+exporter-process:
+  enabled: false
+  apiGroup: "monitoring.coreos.com"
+  image:
+    repository: link-cloud/process-exporter
+    tag: 0.7.5
+  nodeSelectors: []
+  resources:
+    limits:
+      cpu: 400m
+      memory: 100Mi
+    requests:
+      cpu: 100m
+      memory: 30Mi
+  ports:
+    metrics:
+      port: 9256
+  collectors: {}
+  ## Already exist ServiceAccount
+  ##
+  serviceAccountName: ""
+
 exporter-kube-state:
   enabled: false
   apiGroup: "monitoring.coreos.com"

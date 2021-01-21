@@ -49,6 +49,11 @@ dependencies:
     condition: exporter-node.enabled
     repository: "file://./charts/exporter-node/"
 
+  - name: exporter-process
+    version: 0.0.1
+    condition: exporter-process.enabled
+    repository: "file://./charts/exporter-process/"
+
   - name: grafana
     version: 0.0.1
     condition: grafana.enabled
