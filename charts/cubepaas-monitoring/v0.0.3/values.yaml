@@ -361,9 +361,6 @@ prometheus:
   ruleNamespaceSelector: {}
   ruleSelector:
     matchExpressions: []
-  serviceMonitorNamespaceSelector: {}
-  serviceMonitorSelector:
-    matchExpressions: []
   securityContext:
     runAsUser: 1000
     runAsNonRoot: true

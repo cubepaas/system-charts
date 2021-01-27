@@ -136,10 +136,17 @@ spec:
 {{- if .Values.enabledRBAC }}
   serviceAccountName: {{ default (default (include "app.fullname" .) .Values.serviceAccountName) .Values.serviceAccountNameOverride }}
 {{- end }}
-{{- if or (.Values.serviceMonitorSelector) (eq .Values.level "project") }}
   serviceMonitorNamespaceSelector: {}
+{{- if eq .Values.level "project" }}
   serviceMonitorSelector:
-{{ toYaml .Values.serviceMonitorSelector | indent 4 }}
+    matchExpressions:
+      - key: additionalServicemonitor
+        operator: Exists
+{{- else if eq .Values.level "cluster" }}
+  serviceMonitorSelector:
+    matchExpressions:
+      - key: additionalServicemonitor
+        operator: DoesNotExist
 {{- end }}
 {{- if and (eq .Values.level "project") (eq .Values.sync.mode "remote") }}
   remoteRead:
