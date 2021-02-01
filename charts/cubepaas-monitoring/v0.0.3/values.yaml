@@ -166,6 +166,7 @@ exporter-node:
 
 exporter-process:
   enabled: false
+  enabledThreads: false
   apiGroup: "monitoring.coreos.com"
   image:
     repository: link-cloud/process-exporter

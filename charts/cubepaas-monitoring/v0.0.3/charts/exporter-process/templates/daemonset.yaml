@@ -29,6 +29,9 @@ spec:
         - /host/proc
         - -config.path
         - /config/process-config.yml
+        {{- if not .Values.enabledThreads }}
+        - -threads
+        {{- end }}
         ports:
         - name: http
           containerPort: {{ .Values.ports.metrics.port }}
