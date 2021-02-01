@@ -336,7 +336,7 @@ prometheus:
         cpu: "2"
     projectCore:
       limits:
-        memory: 6000Mi
+        memory: 8000Mi
         cpu: "3"
       requests:
         memory: 2000Mi
