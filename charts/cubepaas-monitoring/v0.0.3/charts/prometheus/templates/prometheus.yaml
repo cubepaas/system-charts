@@ -122,9 +122,17 @@ spec:
   logFormat: {{ .Values.logFormat }}
   scrapeInterval: {{ .Values.scrapeInterval }}
   evaluationInterval: {{ .Values.evaluationInterval }}
-{{- if and .Values.resources .Values.resources.core }}
+{{- if eq .Values.level "cluster "}}
+{{- if and .Values.resources .Values.resources.clusterCore }}
   resources:
-{{ toYaml .Values.resources.core | indent 4 }}
+{{ toYaml .Values.resources.clusterCore | indent 4 }}
+{{- end }}
+{{- end }}
+{{- if eq .Values.level "cluster "}}
+{{- if and .Values.resources .Values.resources.clusterCore }}
+  resources:
+{{ toYaml .Values.resources.clusterCore | indent 4 }}
+{{- end }}
 {{- end }}
   retention: "{{ .Values.retention }}"
   configMaps:

@@ -175,7 +175,7 @@ exporter-process:
   resources:
     limits:
       cpu: 400m
-      memory: 100Mi
+      memory: 200Mi
     requests:
       cpu: 100m
       memory: 30Mi
@@ -327,13 +327,20 @@ prometheus:
   nodeSelectors: []
   logFormat: "logfmt"
   resources:
-    core:
+    clusterCore:
       limits:
-        memory: 15000Mi
-        cpu: "5"
+        memory: 10000Mi
+        cpu: "3"
       requests:
         memory: 5000Mi
         cpu: "2"
+    projectCore:
+      limits:
+        memory: 6000Mi
+        cpu: "3"
+      requests:
+        memory: 2000Mi
+        cpu: 500m
     proxy:
       limits:
         memory: 100Mi
