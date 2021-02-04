@@ -122,16 +122,16 @@ spec:
   logFormat: {{ .Values.logFormat }}
   scrapeInterval: {{ .Values.scrapeInterval }}
   evaluationInterval: {{ .Values.evaluationInterval }}
-{{- if eq .Values.level "cluster "}}
+{{- if eq .Values.level "cluster" }}
 {{- if and .Values.resources .Values.resources.clusterCore }}
   resources:
 {{ toYaml .Values.resources.clusterCore | indent 4 }}
 {{- end }}
 {{- end }}
-{{- if eq .Values.level "cluster "}}
-{{- if and .Values.resources .Values.resources.clusterCore }}
+{{- if eq .Values.level "project" }}
+{{- if and .Values.resources .Values.resources.projectCore }}
   resources:
-{{ toYaml .Values.resources.clusterCore | indent 4 }}
+{{ toYaml .Values.resources.projectCore | indent 4 }}
 {{- end }}
 {{- end }}
   retention: "{{ .Values.retention }}"
