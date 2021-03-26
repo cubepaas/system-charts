@@ -1,0 +1,8 @@
+apiVersion: longhorn.io/v1beta1
+kind: Setting
+metadata:
+  labels:
+    cubepaas.com/creator: linkcloud
+  name: backupstore-poll-interval
+  namespace: {{ .Release.Namespace }}
+value: "{{ .Values.defaultSettings.backupstorePollInterval }}"
